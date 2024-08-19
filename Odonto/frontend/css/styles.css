@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+
+/* Desktop */
+@media (min-width: 1200px) {
+	.form-structor {
+	   width: 400px;
+	 }
+   }
+   
+   /* Tablet */
+   @media (min-width: 768px) and (max-width: 1199px) {
+	.form-structor {
+	   width: 300px;
+	 }
+   }
+   
+   /* Mobile */
+   @media (max-width: 767px) {
+	.form-structor {
+	   width: 250px;
+
+   }}
+
+body {
+    background-color: #B0E0E6; /* Cor de fundo azul claro */
+    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #FFFFFF; /* Branco */
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: #e0e0e0;
+}
+
+.navbar button:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#mes-select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+
+#mes-select:hover {
+    background-color: #e0e0e0;
+}
+
+#mes-select:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    background-color: #FFFFFF; /* Branco */
+    border-radius: 20px;
+    padding: 20px;
+    margin: 120px auto 20px auto; /* Adicionei espaço superior para a navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+#tabela-valores {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#tabela-valores th,
+#tabela-valores td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+#tabela-valores th {
+    background-color: #000000; /* Azul claro */
+    color: #FFFFFF; /* Branco */
+}
+
+#tabela-valores tbody tr:nth-child(even) {
+    background-color: #F0F0F0; /* Cinza claro */
+}
+
+#tabela-anual {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    display: none;
+}
+
+#tabela-anual th,
+#tabela-anual td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+#tabela-anual th {
+    background-color: #000000; /* Azul claro */
+    color: #FFFFFF; /* Branco */
+}
+
+#tabela-anual tbody tr:nth-child(even) {
+    background-color: #F0F0F0; /* Cinza claro */
+}
+
+#titulo-anual {
+    display: none;
+}
+
+/* Estilo para destacar a linha de total */
+
+tfoot {
+    font-weight: bold;
+    background-color: #D3D3D3; /* Cinza claro */
+}
+
+tfoot td {
+    border-top: 2px solid #000;
+    text-align: right;
+}
+

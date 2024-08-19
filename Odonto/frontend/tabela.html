@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Tabela de Valores</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css\styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Logo</div>
+    <div class="nav-links">
+      <button id="mensal-link">Mensal</button>
+      <button id="anual-link">Anual</button>
+    </div>
+    <select id="mes-select">
+      <option value="">Selecione o mês</option>
+      <option value="01">Janeiro</option>
+      <option value="02">Fevereiro</option>
+      <option value="03">Março</option>
+      <option value="04">Abril</option>
+      <option value="05">Maio</option>
+      <option value="06">Junho</option>
+      <option value="07">Julho</option>
+      <option value="08">Agosto</option>
+      <option value="09">Setembro</option>
+      <option value="10">Outubro</option>
+      <option value="11">Novembro</option>
+      <option value="12">Dezembro</option>
+    </select>
+  </nav>
+  <div class="container">
+    <h1 id="titulo-mensal">Valores Mensais</h1>
+    <h1 id="titulo-anual">Resultado Anual</h1>
+    <table id="tabela-valores">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Procedimento</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total</td>
+          <td id="total-mensal"></td>
+        </tr>
+      </tfoot>
+    </table>
+    <table id="tabela-anual">
+      <thead>
+        <tr>
+          <th>Mês</th>
+          <th>Valor Total</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td id="total-anual"></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <script src="js\script.js"></script>
+</body>
+</html>
